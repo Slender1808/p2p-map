@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.center * {
+  pointer-events: none;
+  width: 100vw;
+  height: 100vw;
+}
+
+.center {
+  display: flex;
+  flex-flow: wrap;
+  width: 300vw;
+  height: 300vw;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
